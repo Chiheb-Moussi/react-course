@@ -1,14 +1,12 @@
-import Counter from "./compenents/Counter";
-import Name from "./compenents/Name";
+import Character from "./Character";
+import UseEffectComponent from "./UseEffectComponent"
 
 const App = () => {
 
     return (
         <>
-            <h1>Hello wolrd !</h1>
-            <Counter />
-            <Name />
-            
+            {/* <UseEffectComponent /> */}
+            <Character />
         </>
     )
 }

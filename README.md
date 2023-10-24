@@ -1,12 +1,19 @@
-Lesson 1 
+Lesson 2
 
 
-1) useState
-we use useState to access and update a state in compoenent
-when a value of useState changes it re-render the whole compoenent
-2) props
-we can pass the props in the compoenent as attributes or as childrens
-3) events (onChange, onClick)
+1) useEffect
+we use useEffect when there is a side effect in the componenet
+and most of the time we use it for fetching data
 
-4) JSX
-we need to return only one parent element inside the compoenent
+useEffect(()=> {
+    //side effects
+})
+2) Axios
+installation: yarn add axios
+
+axios.get<ICharacter>('https://rickandmortyapi.com/api/character/'+id)
+.then((response) => {
+    setCharacter(response.data)
+}).catch((err) => {
+    console.log(err)
+})
