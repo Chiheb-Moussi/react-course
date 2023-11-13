@@ -1,10 +1,9 @@
-import { RouterProvider } from "react-router-dom";
-import Root from "./Root";
+import Calcutation from "./Calculation";
 
 const App = () => {
   return (
     <>
-      <RouterProvider router={Root} />
+      <Calcutation />
     </>
   );
 };
